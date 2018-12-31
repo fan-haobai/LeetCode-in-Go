@@ -42,6 +42,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 		ln.Next = head
 		head = ln
 
+		// 进位值
 		sum /= 10
 	}
 
