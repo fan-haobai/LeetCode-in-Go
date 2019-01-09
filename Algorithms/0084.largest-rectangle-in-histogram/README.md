@@ -60,4 +60,4 @@ return 10.
 综上所述，result=10
 ```
 
-具体的解题过程与上面不同，详见程序注释
+具体的思路，见 http://www.cnblogs.com/lichen782/p/leetcode_Largest_Rectangle_in_Histogram.html 一文。
