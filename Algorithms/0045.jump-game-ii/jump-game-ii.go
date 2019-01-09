@@ -1,25 +1,26 @@
 package problem0045
 
 func jump(nums []int) int {
-	i, count, end := 0, 0, len(nums)-1
+	cur := 0
+	last := 0
+	ret := 0
 
-	var nextI, maxNextI, maxI int
-	for i < end {
-		if i+nums[i] >= end {
-			return count + 1
+	for i := 0; i < len(nums); i++ {
+		if (i > last) {
+			last = cur
+			ret++
 		}
 
-		nextI, maxNextI = i+1, i+nums[i]
-		for nextI <= maxNextI {
-			if nextI+nums[nextI] > maxI {
-				maxI, i = nextI+nums[nextI], nextI
-			}
-
-			nextI++
-		}
-
-		count++
+		cur = max(cur, nums[i] + i)
 	}
 
-	return count
+	return ret
+}
+
+func max(a, b int) int {
+	if (a > b) {
+		return a
+	}
+
+	return b
 }

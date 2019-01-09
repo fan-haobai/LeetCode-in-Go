@@ -19,7 +19,7 @@ You can assume that you can always reach the last index.
 ```
 
 ## 解题思路
-想清楚，i 定了以后，要保证 next i 为可以 jump 到最远的 i
+贪心思想，具体见 https://www.cnblogs.com/lichen782/p/leetcode_Jump_Game_II.html 一文。
 
 ## 总结
 
